@@ -18,6 +18,7 @@
 		969BB911244F725000571472 /* ApplePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB90E244F725000571472 /* ApplePayment.swift */; };
 		969BB912244F725000571472 /* ApplePaymentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB90F244F725000571472 /* ApplePaymentError.swift */; };
 		969BB913244F725000571472 /* ApplePaymentToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB910244F725000571472 /* ApplePaymentToken.swift */; };
+		969BB918244F7A1B00571472 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 969BB917244F7A1B00571472 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		969BB90E244F725000571472 /* ApplePayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayment.swift; sourceTree = "<group>"; };
 		969BB90F244F725000571472 /* ApplePaymentError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePaymentError.swift; sourceTree = "<group>"; };
 		969BB910244F725000571472 /* ApplePaymentToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePaymentToken.swift; sourceTree = "<group>"; };
+		969BB917244F7A1B00571472 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		969BB8D2244F71ED00571472 = {
 			isa = PBXGroup;
 			children = (
+				969BB917244F7A1B00571472 /* README.md */,
 				969BB8DD244F71ED00571472 /* ApplePay */,
 				969BB8F4244F71F300571472 /* ApplePayTests */,
 				969BB8FF244F71F300571472 /* ApplePayUITests */,
@@ -139,9 +142,9 @@
 		969BB914244F725500571472 /* ApplePay */ = {
 			isa = PBXGroup;
 			children = (
-				969BB90E244F725000571472 /* ApplePayment.swift */,
 				969BB90F244F725000571472 /* ApplePaymentError.swift */,
 				969BB910244F725000571472 /* ApplePaymentToken.swift */,
+				969BB90E244F725000571472 /* ApplePayment.swift */,
 			);
 			name = ApplePay;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 			files = (
 				969BB8EB244F71F200571472 /* LaunchScreen.storyboard in Resources */,
 				969BB8E8244F71F200571472 /* Assets.xcassets in Resources */,
+				969BB918244F7A1B00571472 /* README.md in Resources */,
 				969BB8E6244F71ED00571472 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

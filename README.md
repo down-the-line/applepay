@@ -1,17 +1,68 @@
-# Project Title
+# ApplePay
 
-One Paragraph of project description goes here
+Quick Start with **ApplePay**
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+After download drag and drop ApplePay folder into your project.
 
 ### Prerequisites
 
+**Create an apple ID**
+**Create Merchant ID**
+
+**Create Apple Sandbox User**
+1. First Create a Apple sanbox User and login into a IOS device. 
+2. Open you Wallet application to Add a Sanbox account. Remmber Apple Sanbox testing allow only for specific regions. So that firstly you have to set the specific region available for Sanbox ApplePay testing.
+3. Now if you will try to add a sanbox card it will ask you **Verify Email Address**. Check your email associated account inbox you will get a mail and verfiy it. I will recommended open it in Incognito window so it cannot link with alreay opened account.
+     ****NOTE your email should be valid which you used to create a sanbox User in step 1.****
+     
+     4. Add sanbox account you find from here.
+     
 What things you need to install the software and how to install them
 
+### Example
+
+**Step 1** Confirm ApplePaymentDelegate
+
+```extension ViewController: ApplePaymentDelegate {
+    var currencyCode: String {
+        return "USD"
+    }
+    
+    var countryCode: String {
+        return "US"
+    }
+    
+    var merchantIdentifier: String {
+        return "com.hardeep.applepay.app"
+    }
+    
+    func applePaymentFailedWithError(error: AppleyPayError) {
+        
+    }
+    
+    func didSuccessPayment(payment: ApplePayToken, response: [String : Any]) {
+        
+    }
+    
+    func didAuthorizationPayment(payment: ApplePayToken, callback: @escaping (Bool, [String : Any]?) -> Void) {
+        // hanlde apple pay token
+    }
+    
+}
 ```
-Give examples
+
+```
+
+**Step 2** Create ApplePayment object
+
+var applePay: ApplePayment!
+func applePayButtonClicked() {
+    applePay = ApplePayment(paymentType: .payfort, controller: self)
+    applePay.applePayTapped(amount: "100")
+}
+
 ```
 
 ### Installing
