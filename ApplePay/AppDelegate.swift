@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ApplePay
 //
-//  Created by Office on 21/04/20.
+//  Created by Hardeep Singh on 21/04/20.
 //  Copyright © 2020 Hardeep Singh. All rights reserved.
 //
 

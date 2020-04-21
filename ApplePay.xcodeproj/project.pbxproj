@@ -15,6 +15,9 @@
 		969BB8EB244F71F200571472 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 969BB8E9244F71F200571472 /* LaunchScreen.storyboard */; };
 		969BB8F6244F71F300571472 /* ApplePayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB8F5244F71F300571472 /* ApplePayTests.swift */; };
 		969BB901244F71F300571472 /* ApplePayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB900244F71F300571472 /* ApplePayUITests.swift */; };
+		969BB911244F725000571472 /* ApplePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB90E244F725000571472 /* ApplePayment.swift */; };
+		969BB912244F725000571472 /* ApplePaymentError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB90F244F725000571472 /* ApplePaymentError.swift */; };
+		969BB913244F725000571472 /* ApplePaymentToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969BB910244F725000571472 /* ApplePaymentToken.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		969BB8FC244F71F300571472 /* ApplePayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplePayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		969BB900244F71F300571472 /* ApplePayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplePayUITests.swift; sourceTree = "<group>"; };
 		969BB902244F71F300571472 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		969BB90E244F725000571472 /* ApplePayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePayment.swift; sourceTree = "<group>"; };
+		969BB90F244F725000571472 /* ApplePaymentError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePaymentError.swift; sourceTree = "<group>"; };
+		969BB910244F725000571472 /* ApplePaymentToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplePaymentToken.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,7 @@
 				969BB8DC244F71ED00571472 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		969BB8DC244F71ED00571472 /* Products */ = {
 			isa = PBXGroup;
@@ -102,6 +109,7 @@
 				969BB8DE244F71ED00571472 /* AppDelegate.swift */,
 				969BB8E0244F71ED00571472 /* SceneDelegate.swift */,
 				969BB8E2244F71ED00571472 /* ViewController.swift */,
+				969BB914244F725500571472 /* ApplePay */,
 				969BB8E4244F71ED00571472 /* Main.storyboard */,
 				969BB8E7244F71F200571472 /* Assets.xcassets */,
 				969BB8E9244F71F200571472 /* LaunchScreen.storyboard */,
@@ -126,6 +134,16 @@
 				969BB902244F71F300571472 /* Info.plist */,
 			);
 			path = ApplePayUITests;
+			sourceTree = "<group>";
+		};
+		969BB914244F725500571472 /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				969BB90E244F725000571472 /* ApplePayment.swift */,
+				969BB90F244F725000571472 /* ApplePaymentError.swift */,
+				969BB910244F725000571472 /* ApplePaymentToken.swift */,
+			);
+			name = ApplePay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				969BB8E3244F71ED00571472 /* ViewController.swift in Sources */,
+				969BB911244F725000571472 /* ApplePayment.swift in Sources */,
 				969BB8DF244F71ED00571472 /* AppDelegate.swift in Sources */,
+				969BB913244F725000571472 /* ApplePaymentToken.swift in Sources */,
 				969BB8E1244F71ED00571472 /* SceneDelegate.swift in Sources */,
+				969BB912244F725000571472 /* ApplePaymentError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
