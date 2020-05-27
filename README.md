@@ -8,8 +8,14 @@ After download drag and drop ApplePay folder into your project.
 
 ### Prerequisites
 
-**Create an apple ID**
-**Create Merchant ID**
+**Create an apple ID** and **Merchant ID**
+
+*****NOTE 
+After downlload .cer file and duble click on it to install in keychain. On select your payment certificate if keychain showing warning message:- 
+****"apple pay payment processing certificate is not trusted"****
+then you need to install WWDR intermediate certificate - G2 and the Apple Root CA - G2 
+You can download from here:- https://www.apple.com/certificateauthority/
+
 
 **Create Apple Sandbox User**
 1. First Create a Apple sanbox User and login into a IOS device. 
